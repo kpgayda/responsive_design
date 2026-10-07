@@ -1,0 +1,31 @@
+.responsive_parent {
+  display: flex;
+  flex-wrap: wrap; /*Enables items to stay the same width and move on to another row instead of changing in size to accomidate viewport decrease.*/
+  gap: 10px;
+}
+
+.responsive_parent__child {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}
+
+.titles {
+  min-width: 600px; /*This declaration ensures the red background width will decrease to a maximum of 600px*/
+  height: 30vh; /* This declaration ensures the red background of the titles block will take up 60% of the viewport height.*/
+  background-color: red;
+  font-size: 100px;
+}
+
+.titles__title,
+.titles__subtitle {
+  font-size: 0.5em; /*The em unit will ensure that the font-size of the child is comparable to the font-size of it's parent. 1em is as big, 2em is twice as big and 0.5em is half as big.*/
+}
+
+.html {
+  font-size: 30px;
+}
+
+.rem_test {
+  font-size: 2rem; /*The rem unit will ensure that the font-size of this partichular element is comparable to the size of the font-size of the html element(root element)*/
+}
